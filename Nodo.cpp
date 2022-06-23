@@ -6,7 +6,7 @@ Nodo::Nodo(Persona p){
     Nodo *n = new Nodo(p);
     next = nullptr;
 }
-Nodo::getNext(){
+Nodo Nodo::getNext(){
     return next;
 }
 Nodo::setNext(Nodo n){

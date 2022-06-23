@@ -6,16 +6,31 @@ ListaPersonas::ListaPersonas(){
     ListaPersonas *lp = new ListaPersonas();
     first = nullptr;
 }
-void ListaPersona::insertar(Nodo n){
+ListaPersonas::setFirst(Nodo n){
+    first = n;
+}
+Nodo ListaPersonas::getFirst(){
+    return first;
+}
+void ListaPersonas::insertar(Nodo *n){
     //si la lista esta vacia
-    if(lp->getFirst() == nullptr){
-        lp->setFirst() = n;
-        n.getNext->nullptr;
+    if(first == nullptr){
+        setFirst(n);
+        n->getNext()->n;//apuntando a si mismo
     }
-    //agregar al comienzo
-    else{
-        Nodo *aux = first;
-        lp->setFirst() = n;
-        n.setNext(aux);
+    else if (first->getNext() == first){//si solo tiene un nodo la lista
+        first->setNext(n);
+        n->setNext(first);
+    } else {//insertar al final
+        Nodo *aux = first->getNext();
+        while (aux != first)
+        {
+            aux = aux->getNext();
+        }
+        aux->setNext(n);
+        n->setNext(first);
     }
+}
+void ListaPersonas::eliminar(){
+    
 }
