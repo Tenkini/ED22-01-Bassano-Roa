@@ -109,5 +109,6 @@ Build started 11/06/2022 15:15:20.
 -- Configuring incomplete, errors occurred!
 See also "C:/Users/Likonin!/Documents/VS Code/test_01/build/CMakeFiles/CMakeOutput.log".
 Project "C:\Users\Likonin!\Documents\VS”
+
 Este error persistió durante todos los intentos de arreglarlo. Se intento instalar y desinstalar todo, en reiteradas ocasiones, seguir otros tutoriales y buscar en internet la solución, pero nada dio resultado. Como último recurso se contacto a principios de mes de Julio al ayudante, el cual recomendó que un día se juntara Daniel con él en la universidad a arreglar el problema, lo cual no fue posible debido a que el grupo no posee un notebook, esto llevo a pedirle ayuda al profesor después de clases online. El problema persistió y se tomó la decisión de formatear el computador y seguir el tutorial del ayudante nuevamente, lo cual soluciono el problema, pero dejo con muy poco tiempo de familiarizarse con el lenguaje e IDE.
 Un error que costó la no implementación total de la solución por falta de conocimientos.
