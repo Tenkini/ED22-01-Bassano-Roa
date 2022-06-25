@@ -94,21 +94,28 @@ No hubo dificultad en la instalación de la librería para ninguno de los partic
 ## Anexo B: Instalación de IDE y configuración librerías OpenCV
 
 En la bitácora se aprecia que Daniel Bassano ocupó mucho más tiempo de lo esperado en instalar todas las herramientas necesarias para implementar la solución al problema propuesto.
-Esto fue debido a que en primera instancia se realizó la instalación, de Visual Studio 2022 y CMake, siguiendo las instrucciones del profesor dadas en el vídeo compartido en su canal de Youtube (https://www.youtube.com/watch?v=Hu7ArOaFm2g). La instalación se hizo correctamente, corroborado por la compilación correcta del código demo, que contenía el tutorial.
+Esto fue debido a que en primera instancia se realizó la instalación, de Visual Studio 2022 y CMake, siguiendo las instrucciones del profesor dadas en el vídeo compartido en su canal de Youtube. La instalación se hizo correctamente, corroborado por la compilación correcta del código demo, que contenía el tutorial.
 Luego, comenzaron las ayudantías y se recomendó que se ocupara VS Code. Lo cual incito a Daniel Bassano a instalar todo nuevamente, para así poder seguir las instrucciones del ayudante en una misma plataforma. Se siguieron todas las instrucciones al pie de la letra y el código más simple de “Hola Mundo” no compilaba, por el siguiente error:
-“CMake Error at CMakeLists.txt:2 (project):Failed to run MSBuild command:
-
-C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
-
-to get the value of VCTargetsPath:
-
-Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
-Copyright (C) Microsoft Corporation. All rights reserved.
-
-Build started 11/06/2022 15:15:20.
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Likonin!/Documents/VS Code/test_01/build/CMakeFiles/CMakeOutput.log".
-Project "C:\Users\Likonin!\Documents\VS”
-
+>
+>“CMake Error at CMakeLists.txt:2 (project):Failed to run MSBuild command:
+>
+>C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
+>
+>to get the value of VCTargetsPath:
+>
+>Microsoft (R) Build Engine version 17.2.1+52cd2da31 for .NET Framework
+>Copyright (C) Microsoft Corporation. All rights reserved.
+>
+>Build started 11/06/2022 15:15:20.
+>-- Configuring incomplete, errors occurred!
+>See also "C:/Users/Likonin!/Documents/VS Code/test_01/build/CMakeFiles/CMakeOutput.log".
+>Project "C:\Users\Likonin!\Documents\VS”
+>
 Este error persistió durante todos los intentos de arreglarlo. Se intento instalar y desinstalar todo, en reiteradas ocasiones, seguir otros tutoriales y buscar en internet la solución, pero nada dio resultado. Como último recurso se contacto a principios de mes de Julio al ayudante, el cual recomendó que un día se juntara Daniel con él en la universidad a arreglar el problema, lo cual no fue posible debido a que el grupo no posee un notebook, esto llevo a pedirle ayuda al profesor después de clases online. El problema persistió y se tomó la decisión de formatear el computador y seguir el tutorial del ayudante nuevamente, lo cual soluciono el problema, pero dejo con muy poco tiempo de familiarizarse con el lenguaje e IDE.
 Un error que costó la no implementación total de la solución por falta de conocimientos.
+
+## Referencias
+
+1. Vídeo ayuda de instalación de profesor, Dr. Juan Bekios en su canal de youtube, BekiosLab: https://www.youtube.com/watch?v=Hu7ArOaFm2g
+2. Vídeo ayuda de instalación de ayudante Cristian Galleguillos: https://drive.google.com/drive/u/1/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
+3. Foro para ayuda de información y corrección de errores: https://stackoverflow.com
