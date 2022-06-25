@@ -5,10 +5,8 @@
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <opencv2/videoio.hpp>
-//#include "Persona.hpp"
-//#include "Persona.cpp"
+#include "Persona.hpp"
 #include "Nodo.hpp"
-#include "Nodo.cpp"
 
 class ListaPersonas
 {
@@ -16,10 +14,10 @@ private:
     Nodo *first;
 public:
     ListaPersonas::ListaPersonas();
-    Nodo getFirst();
-    setFirst(Nodo);
-    void insertar(Nodo);
-    void eliminar();
+    Nodo* getFirst();
+    void setFirst(Nodo*);
+    void insertar(Nodo*);
+    void eliminar(Nodo*);
 };
 
 #endif

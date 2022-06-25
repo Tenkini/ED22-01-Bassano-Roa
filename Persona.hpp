@@ -26,4 +26,4 @@ public:
     int getYCentro();
 };
 
-#endif
+#endif;

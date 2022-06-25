@@ -1,0 +1,10 @@
+^C:\USERS\BASSA\ONEDRIVE\DOCUMENTS\VISUAL STUDIO 2022\OPENCVTESTS\BUILD\CMAKEFILES\DB77E6D63D99C8DD6DE479B6EB2701C1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/bassa/OneDrive/Documents/Visual Studio 2022/opencvTests" "-BC:/Users/bassa/OneDrive/Documents/Visual Studio 2022/opencvTests/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/bassa/OneDrive/Documents/Visual Studio 2022/opencvTests/build/opencvtest.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

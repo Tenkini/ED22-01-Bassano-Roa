@@ -36,4 +36,4 @@ public:
     void adjustRect(Rect & r) const;
 };
 
-#endif
+#endif;

@@ -305,7 +305,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Proyectos\Visual Studio 2022\ED22-01-Bassano-Roa\main.cpp" />
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\ED22-01-Bassano-Roa\Persona.cpp" />
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\ED22-01-Bassano-Roa\Detector.cpp" />
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\ED22-01-Bassano-Roa\detectPeople.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Proyectos\Visual Studio 2022\ED22-01-Bassano-Roa\build\ZERO_CHECK.vcxproj">

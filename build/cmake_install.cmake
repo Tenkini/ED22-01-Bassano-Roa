@@ -1,8 +1,8 @@
-# Install script for directory: C:/Proyectos/Visual Studio 2022/ED22-01-Bassano-Roa
+# Install script for directory: C:/Proyectos/Visual Studio 2022/opencvTests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Program Files/proyecto")
+  set(CMAKE_INSTALL_PREFIX "C:/Program Files/opencvtest")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Proyectos/Visual Studio 2022/ED22-01-Bassano-Roa/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Proyectos/Visual Studio 2022/opencvTests/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

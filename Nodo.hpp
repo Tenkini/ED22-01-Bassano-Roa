@@ -6,20 +6,19 @@
 #include <opencv2/imgproc.hpp>
 #include <opencv2/videoio.hpp>
 #include "Persona.hpp"
-#include "Persona.cpp"
 
 class Nodo
 {
 private:
-    Persona persona;
+    Persona *persona;
     Nodo *next;
 public: 
     Nodo(Persona);
 
     Persona getPersona();
-    //setPersona(Persona);
-    Nodo getNext();
-    setNext(Nodo);
+    void setPersona(Persona);
+    Nodo* getNext();
+    void setNext(Nodo*);
 };
 
 #endif

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\opencvTests\Persona.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\opencvTests\Detector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\opencvTests\detectPeople.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\opencvTests\Nodo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Proyectos\Visual Studio 2022\opencvTests\ListaPersonas.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Proyectos\Visual Studio 2022\opencvTests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C128FDD3-BAAA-357D-A7AB-0BD3111D457D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

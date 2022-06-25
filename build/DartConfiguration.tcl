@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: C:/Proyectos/Visual Studio 2022/ED22-01-Bassano-Roa
-BuildDirectory: C:/Proyectos/Visual Studio 2022/ED22-01-Bassano-Roa/build
+SourceDirectory: C:/Proyectos/Visual Studio 2022/opencvTests
+BuildDirectory: C:/Proyectos/Visual Studio 2022/opencvTests/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Proyectos/Visual Studio 2022/ED22-01-Bassano-Roa"
+ConfigureCommand: "C:/Program Files/CMake/bin/cmake.exe" "C:/Proyectos/Visual Studio 2022/opencvTests"
 MakeCommand: "C:\Program Files\CMake\bin\cmake.exe" --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
