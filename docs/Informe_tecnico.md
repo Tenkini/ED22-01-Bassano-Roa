@@ -83,7 +83,7 @@ Se puede decir que, en términos de soluciones, no se logró el objetivo debido 
 
 Con respecto a la funcionalidad de la estructura de datos pedida en la primera entrega, fue testeada fuera del ambiente de la librería OpenCV y CMake y cumple con el objetivo.
 
-Por el lado de aprendizaje de trabajo multi herramientas y mas cercano a lo profesional, se comprendió el tiempo y la responsabilidad necesaria para lograr resultados esperados. 
+Por el lado de aprendizaje de trabajo multi-herramientas y mas cercano a lo profesional, se comprendió el tiempo y la responsabilidad necesaria para lograr resultados esperados. Se espera poder implementar una solución aceptable para la segunda entrega, además observar la diferencia de de eficacia entre diferentes tipos de estructuras de datos.
 
 # Anexos
 
@@ -116,10 +116,11 @@ Este error persistió durante todos los intentos de arreglarlo. Se intento insta
 
 El problema persistió y se tomó la decisión de formatear el computador y seguir el tutorial del ayudante nuevamente, lo cual soluciono el problema, pero dejo con muy poco tiempo de familiarizarse con el lenguaje e IDE.
 
-Un error que costó la no implementación total de la solución por falta de conocimientos.
+Un error que costó la no implementación total de la solución por falta de conocimientos, además de "error LNK2005" que impidío la compilación y testeo del código.
 
 ## Referencias
 
-1. Vídeo ayuda de instalación de profesor, Dr. Juan Bekios en su canal de youtube, BekiosLab: https://www.youtube.com/watch?v=Hu7ArOaFm2g
-2. Vídeo ayuda de instalación de ayudante Cristian Galleguillos: https://drive.google.com/drive/u/1/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
-3. Foro para ayuda de información y corrección de errores: https://stackoverflow.com
+1. Vídeo ayuda de instalación de profesor, Dr. Juan Bekios-Calfa en su canal de youtube, BekiosLab: https://www.youtube.com/watch?v=Hu7ArOaFm2g
+2. Vídeos ayuda de lógica del taller del profesor, Dr. Juan Bekios-Calfa en su canal de youtube, BekiosLab
+3. Vídeo ayuda de instalación de ayudante Cristian Galleguillos: https://drive.google.com/drive/u/1/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
+4. Foro para ayuda de información y corrección de errores: https://stackoverflow.com
