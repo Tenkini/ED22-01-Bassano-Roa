@@ -44,9 +44,7 @@ detectadas por su "centroide", previamente habiendo identificado si esa persona 
 
 ## 2. Materiales y métodos
 
-El desarrollo de este Proyecto se lleva a cabo con orientación a objetos en C++ en el editor de código
-fuente Visual Studio Code, utilizando todas las herramientas que entrega C++ y la biblioteca de openCv, se implementara 
-la lógica definida para llevar a cabo el algoritmo de solución.
+El desarrollo de este Proyecto se lleva a cabo con orientación a objetos en C++ en el editor de código fuente Visual Studio Code, utilizando todas las herramientas que entrega C++ y la biblioteca de openCv, se implementara la lógica definida para llevar a cabo el algoritmo de solución.
 
 ### 2.1 Instalación
 
@@ -65,24 +63,26 @@ Los componentes y clases usados son los siguientes:
 
 ### 2.3 Implementación
 
-Para detectar personas tenemos el código de Detector.cpp que contiene una función detect( ), la cual genera rectángulos con un centroide y que los convierte en clase persona por cada rectángulo diferente detectado, retornando un vector lleno de clases Persona.
-La clase Persona, contiene las posiciones del rectángulo dados por la librería OpenCV, que detecta personas con la detección Default.
-En el archivo detectPeople.cpp donde se encuentra el main( ) generamos nuestras instancias de clase Persona retornadas en un vector, el cual recorremos e ingresamos las instancias a nuestra estructura de datos (en modo de Nodo que contiene esta clase Persona), que en este caso es una lista enlazada circular.
-Una vez procesado el frame del video saltamos 5 frames (esto para que haya un cambio notable entre frames) y volvemos a procesar otro y dentro del ciclo iterador del vector de Persona (en el archivo detectPeople.cpp) comparamos la posición del centroide de cada Persona del vector con 1 de la Persona que se encuentra en la lista enlazada, tomamos el menor valor entre la diferencia de posiciones y se asume que es la misma persona. Si esta esta diferencia es mayor a cierto estándar y hay menos personas en el vector que en la lista se asume que esta persona desapareció del frame, entonces se elimina la persona de la lista enlazada.
+Para detectar personas tenemos el código de Detector.cpp que contiene una función detect( ), la cual genera rectángulos con un centroide y que los convierte en clase persona por cada rectángulo diferente detectado, retornando un vector lleno de clases Persona. La clase Persona, contiene las posiciones del rectángulo dados por la librería OpenCV, que detecta personas con la detección Default.
+
+En el archivo detectPeople.cpp donde se encuentra el main( ) generamos nuestras instancias de clase Persona retornadas en un vector, el cual recorremos e ingresamos las instancias a nuestra estructura de datos (en modo de Nodo que contiene esta clase Persona), que en este caso es una lista enlazada circular. Una vez procesado el frame del video saltamos 5 frames (esto para que haya un cambio notable entre frames) y volvemos a procesar otro y dentro del ciclo iterador del vector de Persona (en el archivo detectPeople.cpp) comparamos la posición del centroide de cada Persona del vector con 1 de la Persona que se encuentra en la lista enlazada, tomamos el menor valor entre la diferencia de posiciones y se asume que es la misma persona. Si esta esta diferencia es mayor a cierto estándar y hay menos personas en el vector que en la lista se asume que esta persona desapareció del frame, entonces se elimina la persona de la lista enlazada.
+
 Para los requerimientos que tratan sobre lo que quiere el guardia, para el trafico de entrada y salida se tiene 2 variables tipo int globales que se actualizan con +1 cada vez que una persona cruza desde el cuadrante bajo la línea roja al cuadrante superior e inversamente para la salida. Estos cálculos se hacen con la posición en Y de la persona y las coordenadas del frame, se compara la PosY vs las coordenadas de la matriz que genera el frame y se decide de donde a donde se desplaza la persona, mediante lo que arroja su posición inicial y final (de que entra a la lista a la que se elimina). Para los flujos se toman el total de cada contador y se divide por la unidad de tiempo necesaria.
+
 El requerimiento que pide personas diferentes que han entrado y salido, no se tiene solución, ya que no se tienen los conocimientos para discernir en código como diferenciar personas que posiblemente entren y salgan varias veces.
 
 ## 3. Resultados obtenidos
 
-Como ya se nombro en el resumen, los resultados de este proyecto, no fueron fructíferos. Si bien teníamos
-la idea de la lógica para desarrollar los requerimientos, se nos complicó la implementación del código. Algunos 
-impedimentos que se nos presentaron fueron; la sintaxis de C++, errores específicos que llevaron tiempo en 
-solucionarse, errores de build y compatibilidades. El resultado final no fue un código funcional que cubra todos los requerimientos del proyecto, sino más bien se implementó el nodo y la lista generalizada en la cual se almacenarían las personas con sus posiciones.
+Como ya se nombro en el resumen, los resultados de este proyecto, no fueron fructíferos. Si bien teníamos la idea de la lógica para desarrollar los requerimientos, se nos complicó la implementación del código.
+
+Algunos impedimentos que se nos presentaron fueron; la sintaxis de C++, errores específicos que llevaron tiempo en solucionarse, errores de build y compatibilidades. El resultado final no fue un código funcional que cubra todos los requerimientos del proyecto, sino más bien se implementó el nodo y la lista generalizada en la cual se almacenarían las personas con sus posiciones.
 
 ## 4. Conclusiones
 
 Se puede decir que, en términos de soluciones, no se logró el objetivo debido a problemas de familiarización con las herramientas necesarias para cumplir con lo necesitado.
+
 Con respecto a la funcionalidad de la estructura de datos pedida en la primera entrega, fue testeada fuera del ambiente de la librería OpenCV y CMake y cumple con el objetivo.
+
 Por el lado de aprendizaje de trabajo multi herramientas y mas cercano a lo profesional, se comprendió el tiempo y la responsabilidad necesaria para lograr resultados esperados. 
 
 # Anexos
@@ -93,10 +93,10 @@ No hubo dificultad en la instalación de la librería para ninguno de los partic
 
 ## Anexo B: Instalación de IDE y configuración librerías OpenCV
 
-En la bitácora se aprecia que Daniel Bassano ocupó mucho más tiempo de lo esperado en instalar todas las herramientas necesarias para implementar la solución al problema propuesto.
-Esto fue debido a que en primera instancia se realizó la instalación, de Visual Studio 2022 y CMake, siguiendo las instrucciones del profesor dadas en el vídeo compartido en su canal de Youtube. La instalación se hizo correctamente, corroborado por la compilación correcta del código demo, que contenía el tutorial.
+En la bitácora se aprecia que Daniel Bassano ocupó mucho más tiempo de lo esperado en instalar todas las herramientas necesarias para implementar la solución al problema propuesto. Esto fue debido a que en primera instancia se realizó la instalación, de Visual Studio 2022 y CMake, siguiendo las instrucciones del profesor dadas en el vídeo compartido en su canal de Youtube. La instalación se hizo correctamente, corroborado por la compilación correcta del código demo, que contenía el tutorial.
+
 Luego, comenzaron las ayudantías y se recomendó que se ocupara VS Code. Lo cual incito a Daniel Bassano a instalar todo nuevamente, para así poder seguir las instrucciones del ayudante en una misma plataforma. Se siguieron todas las instrucciones al pie de la letra y el código más simple de “Hola Mundo” no compilaba, por el siguiente error:
->
+
 >“CMake Error at CMakeLists.txt:2 (project):Failed to run MSBuild command:
 >
 >C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe
@@ -110,8 +110,12 @@ Luego, comenzaron las ayudantías y se recomendó que se ocupara VS Code. Lo cua
 >-- Configuring incomplete, errors occurred!
 >See also "C:/Users/Likonin!/Documents/VS Code/test_01/build/CMakeFiles/CMakeOutput.log".
 >Project "C:\Users\Likonin!\Documents\VS”
->
-Este error persistió durante todos los intentos de arreglarlo. Se intento instalar y desinstalar todo, en reiteradas ocasiones, seguir otros tutoriales y buscar en internet la solución, pero nada dio resultado. Como último recurso se contacto a principios de mes de Julio al ayudante, el cual recomendó que un día se juntara Daniel con él en la universidad a arreglar el problema, lo cual no fue posible debido a que el grupo no posee un notebook, esto llevo a pedirle ayuda al profesor después de clases online. El problema persistió y se tomó la decisión de formatear el computador y seguir el tutorial del ayudante nuevamente, lo cual soluciono el problema, pero dejo con muy poco tiempo de familiarizarse con el lenguaje e IDE.
+
+
+Este error persistió durante todos los intentos de arreglarlo. Se intento instalar y desinstalar todo, en reiteradas ocasiones, seguir otros tutoriales y buscar en internet la solución, pero nada dio resultado. Como último recurso se contacto a principios de mes de Julio al ayudante, el cual recomendó que un día se juntara Daniel con él en la universidad a arreglar el problema, lo cual no fue posible debido a que el grupo no posee un notebook, esto llevo a pedirle ayuda al profesor después de clases online.
+
+El problema persistió y se tomó la decisión de formatear el computador y seguir el tutorial del ayudante nuevamente, lo cual soluciono el problema, pero dejo con muy poco tiempo de familiarizarse con el lenguaje e IDE.
+
 Un error que costó la no implementación total de la solución por falta de conocimientos.
 
 ## Referencias
