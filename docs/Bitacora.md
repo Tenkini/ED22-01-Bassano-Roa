@@ -35,6 +35,6 @@
 | 13/JUL | OBJ-05    | Implementacion KdTree|Daniel Bassano y Matías Roa|  4 horas| 3 horas|
 | 14/JUL | OBJ-06    | Modelamiento de la logica con KdTree|Daniel Bassano  y Matías Roa|  5 horas| 3.2 horas|
 | 15/JUL | OBJ-06    | Modelamiento de la logica con KdTree|Daniel Bassano|  5 horas| 3.2 horas|
-| 16/JUL | OBJ-07    | Implementacion requerimientos|Daniel y Bassano Matías Roa|  5 horas| 12 horas|
-| 17/JUL | OBJ-07    | Implementacion requerimientos|Daniel y Bassano Matías Roa|  24 horas| 22 horas|
+| 16/JUL | OBJ-07    | Implementacion requerimientos|Daniel Bassano y Matías Roa|  5 horas| 12 horas|
+| 17/JUL | OBJ-07    | Implementacion requerimientos|Daniel Bassano y Matías Roa|  24 horas| 22 horas|
 
