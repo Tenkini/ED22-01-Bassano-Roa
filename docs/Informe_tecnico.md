@@ -106,12 +106,22 @@ Por el lado de aprendizaje de trabajo multi-herramientas y mas cercano a lo prof
 
 # Anexos
 
-## Anexo A: Errores detección, VS Code, sintaxis C++
+## Anexo A: Errores detección, VS Code y sintaxis C++
 
+Los errores y atrasos encontrados fueron muchos, debido a la poca familiaridad de trabajar en un proyecto multi-herramientas, esto sumado a la poca práctica con C++ costó al proyecto de poder implementar un código depurado y presentable. Esto se puede apreciar en que pocas funciones se ocuparon para hacer mas legible el código en el main de código repetido. Además, los muchos errores espontanéos, los cuales ocurrian al compartir los proyectos que cada participante hizo, atrasando asi días completos al tener que solucionarnos.
 
+La poca familiaridad con el detector costó que al momento de ejecutar el código no se cumpla como se debieran los requermientos. Por ejemplo, cuando tenemos que hay la misma cantidad de personas en el frame y la misma cantidad de personas en el árbol se asumen que son las mismas personas, de frame a frame, pero cuando el detector dejaba de marcar a 1 persona y marcaba a otra nueva, esto se consideraba dentro de la lógica que eran la misma persona, pero con posiciones muy diferentes, que hacía que se cumplieran los condicionales del conteo y sumara 1, ya sea a la entrada o salida.
+
+También la complejidad de VS Code produjo que se fuese incapaz de actualizar la versión de C++ a 17, para poder ocupar por ejemplo, filesystem, esto támbien impedió implementar las cosas eficientemente y claras.
+
+## Ejemplo de errores de detección
+
+![Captura de pantalla 2022-07-17 220714](https://user-images.githubusercontent.com/89607474/179436355-77a71386-99a7-4049-8568-1b4e56d6f184.png)
+
+![Captura de pantalla 2022-07-17 220738](https://user-images.githubusercontent.com/89607474/179436363-8af9d07a-4314-4e06-bf01-d81af277fa37.png)
 
 ## Referencias
 
 1. Vídeos ayuda de lógica del taller del profesor, Dr. Juan Bekios-Calfa en su canal de youtube, BekiosLab
-2. Foro para ayuda de soluciones, información y corrección de errores: https://stackoverflow.com
-3. Git de implementacion del arbol binario KD-Tree: https://github.com/KorayGocmen/kdTree
+2. Foro de ayuda de soluciones, información y corrección de errores: https://stackoverflow.com
+3. GitHub de árbol binario KD-Tree: https://github.com/KorayGocmen/kdTree
