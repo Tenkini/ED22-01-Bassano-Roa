@@ -112,6 +112,8 @@ Los errores y atrasos encontrados fueron muchos, debido a la poca familiaridad d
 
 La poca familiaridad con el detector costó que al momento de ejecutar el código no se cumpla como se debieran los requermientos. Por ejemplo, cuando tenemos que hay la misma cantidad de personas en el frame y la misma cantidad de personas en el árbol se asumen que son las mismas personas, de frame a frame, pero cuando el detector dejaba de marcar a 1 persona y marcaba a otra nueva, esto se consideraba dentro de la lógica que eran la misma persona, pero con posiciones muy diferentes, que hacía que se cumplieran los condicionales del conteo y sumara 1, ya sea a la entrada o salida.
 
+Uno de los errores que se presento constantemente en el transcurso del proyecto fue el "KN1120" el cual por la experiencia adquerida al realizar el codeo y investigacion, este error puede presentarse por cualquier motivo, provocando que solucionarlo se vuelva complicado y bastante consumidor de tiempo.
+
 También la complejidad de VS Code produjo que se fuese incapaz de actualizar la versión de C++ a 17, para poder ocupar por ejemplo, filesystem, esto támbien impedió implementar las cosas eficientemente y claras.
 
 ## Ejemplo de errores de detección
