@@ -35,12 +35,19 @@ las personas que pasan por el edificio, también que entregue datos, flujos, est
 4.	Objetivo 04: Implementar y desarrollar métodos de un nodo.
 5.	Objetivo 05: Implementar y desarrollar métodos de una lista enlazada simple. 
 6.	Objetivo 06: Unificar todo el código implementado y que cubra los requerimientos solicitados.
+7.	Objetivo 07: Lectura y compresión del problema actualizado.
+8.	Objetivo 08: Implementar lectura de frames del video.
+9.	Objetivo 09: Implementar y desarrollar metodos de una lista enlazada simple.
+10.	Objetivo 10: Investigar sobre el arbol KdTree.
+11.	Objetivo 11: Implementar arbol KdTree
+12.	Objetivo 12: Modelar logica con arbol KdTree
+13.	Objetivo 13: Unificar todo el código implementado y que cubra los requerimientos solicitados.
 
 ### 1.3 Solución propuesta
 
 Diseñar e implementar con POO y la librería OpenCV en C++, un algoritmo que realice la detección de objetos, en este caso personas.
-La lógica a implementar es diseñar una lista enlazada circular simple, que vaya almacenando a las personas que van siendo
-detectadas por su "centroide", previamente habiendo identificado si esa persona esta entrando o saliendo por primera vez.
+La lógica a implementar es implementar un Arbol binario de tipo KdTree, que vaya almacenando a las personas que van siendo
+detectadas por su "centroide".
 
 ## 2. Materiales y métodos
 
@@ -58,8 +65,8 @@ Los componentes y clases usados son los siguientes:
 -	Cmake: Herramienta para construir y empaquetar software.
 -	Clase Detector: Objeto que detecta personas con la librería OpenCV mediante la detección Default
 -	Clase Persona: Objeto del cual se instanciará una persona con los siguientes atributos: id, x e y inicio, x e y fin, x e y centro
--	Clase Nodo: Objeto el cual tendrá como atributo una persona y un apuntador al siguiente nodo.
--	Clase Lista Enlazada: TDA que almacenara los nodos de las personas.
+-	Clase KdTreNode: Objeto el cual tendrá como atributo posiciones de una persona.
+-	Clase KdTree: TDA que almacenara los nodos de las cordenadas de las personas.
 
 ### 2.3 Implementación
 
@@ -69,21 +76,15 @@ En el archivo detectPeople.cpp donde se encuentra el main( ) generamos nuestras 
 
 Para los requerimientos que tratan sobre lo que quiere el guardia, para el trafico de entrada y salida se tiene 2 variables tipo int globales que se actualizan con +1 cada vez que una persona cruza desde el cuadrante bajo la línea roja al cuadrante superior e inversamente para la salida. Estos cálculos se hacen con la posición en Y de la persona y las coordenadas del frame, se compara la PosY vs las coordenadas de la matriz que genera el frame y se decide de donde a donde se desplaza la persona, mediante lo que arroja su posición inicial y final (de que entra a la lista a la que se elimina). Para los flujos se toman el total de cada contador y se divide por la unidad de tiempo necesaria.
 
-El requerimiento que pide personas diferentes que han entrado y salido, no se tiene solución, ya que no se tienen los conocimientos para discernir en código como diferenciar personas que posiblemente entren y salgan varias veces.
+
 
 ## 3. Resultados obtenidos
-
-Como ya se nombro en el resumen, los resultados de este proyecto, no fueron fructíferos. Si bien teníamos la idea de la lógica para desarrollar los requerimientos, se nos complicó la implementación del código.
-
-Algunos impedimentos que se nos presentaron fueron; la sintaxis de C++, errores específicos que llevaron tiempo en solucionarse, errores de build y compatibilidades. El resultado final no fue un código funcional que cubra todos los requerimientos del proyecto, sino más bien se implementó el nodo y la lista generalizada en la cual se almacenarían las personas con sus posiciones.
-
+En comparacion a la entrega anterior, los resultados de este proyecto en parte fueron  fructíferos, se implementaron los requerimientos ( no eficazmente) solicitados.
+Debido a que al igual que la entrega anterior se presentaron los mismos impedimientos; la sintaxis de C++, errores específicos que llevaron tiempo en solucionarse, errores de build y compatibilidades. 
 ## 4. Conclusiones
 
-Se puede decir que, en términos de soluciones, no se logró el objetivo debido a problemas de familiarización con las herramientas necesarias para cumplir con lo necesitado.
-
-Con respecto a la funcionalidad de la estructura de datos pedida en la primera entrega, fue testeada fuera del ambiente de la librería OpenCV y CMake y cumple con el objetivo.
-
-Por el lado de aprendizaje de trabajo multi-herramientas y mas cercano a lo profesional, se comprendió el tiempo y la responsabilidad necesaria para lograr resultados esperados. Se espera poder implementar una solución aceptable para la segunda entrega, además observar la diferencia de de eficacia entre diferentes tipos de estructuras de datos.
+Se puede decir que, en términos de soluciones, se logró  medianamente el objetivo del taller.
+Por el lado de aprendizaje de trabajo multi-herramientas y mas cercano a lo profesional, se comprendió el tiempo y la responsabilidad necesaria para lograr resultados esperados.
 
 # Anexos
 
@@ -124,3 +125,4 @@ Un error que costó la no implementación total de la solución por falta de con
 2. Vídeos ayuda de lógica del taller del profesor, Dr. Juan Bekios-Calfa en su canal de youtube, BekiosLab
 3. Vídeo ayuda de instalación de ayudante Cristian Galleguillos: https://drive.google.com/drive/u/1/folders/1MTik-UAPAi0MgkdM-O9t6s_wD9JSVolE
 4. Foro para ayuda de información y corrección de errores: https://stackoverflow.com
+5. Git de implementacion del arbol binario: https://github.com/KorayGocmen/kdTree
